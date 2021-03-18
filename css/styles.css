@@ -36,6 +36,7 @@ body {
 
 .icon-envelope,
 .icon-Vector {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--secondary-color);
   margin-right: 10px;
 }
@@ -116,6 +117,7 @@ body {
 }
 
 .social-list-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #afb1b8;
   width: 20px;
   height: 20px;
@@ -123,6 +125,7 @@ body {
 
 .social-link:focus,
 .social-link:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--accent-color);
 }
 
@@ -160,6 +163,7 @@ body {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-container {
@@ -179,6 +183,11 @@ body {
 .regular-customers-link:focus .regular-customers-icon,
 .regular-customers-link:hover .regular-customers-icon {
   fill: var(--accent-color);
+}
+
+.regular-customers-link:focus,
+.regular-customers-link:hover {
+  border-color: var(--accent-color);
 }
 
 .footer-social-links {
@@ -212,10 +221,12 @@ body {
   width: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .regular-customers-list-item:not(:last-child) {
@@ -310,6 +321,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .features-list {
@@ -343,6 +355,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .phone-link {
@@ -351,6 +364,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-container .mail-link {
@@ -493,6 +507,7 @@ body {
 }
 
 .project-item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-left: 30px;
   margin-top: 30px;
 }
@@ -505,14 +520,6 @@ body {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.filter-btm {
-  display: block;
-  padding: 6px 22px;
-  background: #f5f4fa;
-  border: none;
-  border-radius: 4px;
 }
 
 .projects-list {
@@ -546,6 +553,14 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--main-color);
+  display: block;
+  padding: 6px 22px;
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btm:hover,
